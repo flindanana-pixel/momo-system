@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="h-full dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的潜在财运与生财磁场测定 | Wealth Mindset & Energy Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        titanium: {
+                            950: '#07090e',
+                            900: '#0d1117',
+                            800: '#161b22',
+                            700: '#21262d',
+                            600: '#30363d',
+                            400: '#8b949e',
+                            200: '#c9d1d9',
+                            100: '#f0f6fc',
+                        },
+                        cyanGlow: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            accent: '#06b6d4',
+                            emerald: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['"Fira Code"', 'monospace'],
+                        serif: ['"Noto Serif SC"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07090e;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 85% 90%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+            color: #c9d1d9;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(13, 17, 23, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(22, 27, 34, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.35);
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07090e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #21262d;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="min-h-full flex flex-col justify-between antialiased selection:bg-cyan-500/20 selection:text-cyan-200">
+
+    <header class="w-full border-b border-titanium-700/50 glass-panel sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-cyanGlow-500/10 border border-cyanGlow-500/30 flex items-center justify-center text-cyanGlow-400">
+                    <i data-lucide="coins" class="w-4 h-4"></i>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-mono font-semibold tracking-wider text-cyanGlow-400 uppercase">WEALTH-MAGNET // v3.5</span>
+                    </div>
+                    <p class="text-sm font-semibold text-titanium-100 tracking-tight">潜在财运与生财磁场测定</p>
+                </div>
+            </div>
+            <div class="hidden sm:flex items-center space-x-3 text-xs font-mono text-titanium-400">
+                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>具体落地指南</span>
+                <span>•</span>
+                <span>直觉自我探索</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-2xl w-full mx-auto px-4 py-8 md:py-12">
+
+        <!-- INTRO SECTION -->
+        <div id="view-intro" class="space-y-6">
+            <div class="glass-panel rounded-2xl p-6 md:p-10 relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-60 h-60 bg-cyanGlow-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="space-y-4">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-titanium-800/80 border border-titanium-700 text-xs font-mono text-cyanGlow-400">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                        <span>WEALTH MAGNET ASSESSMENT</span>
+                    </div>
+
+                    <h1 class="text-2xl md:text-3xl font-bold text-titanium-100 tracking-tight leading-snug">
+                        找到你的生财爆发点：你的<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">潜在财运与进财磁场</span>来自哪里？
+                    </h1>
+
+                    <p class="text-titanium-200 text-sm md:text-base leading-relaxed pt-1">
+                        财运并不是虚无缥缈的运势，而是你<span class="text-titanium-100 font-semibold">处理精力的方式、做事的心态与价值交换模式</span>带来的自然结果。
+                        只需 6 道直觉情境选择，帮你看清自己最省力的“生财赚钱状态”，以及匹配的<span class="text-cyanGlow-400">超具体副业方向</span>！
+                    </p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 py-3 border-y border-titanium-700/50 text-xs text-titanium-200 font-mono">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="smile" class="w-4 h-4 text-cyanGlow-400 shrink-0"></i>
+                            <span>6 道直觉情境题</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="compass" class="w-4 h-4 text-cyanGlow-400 shrink-0"></i>
+                            <span>四维生财雷达</span>
+                        </div>
+                        <div class="flex items-center space-x-2 col-span-2 md:col-span-1">
+                            <i data-lucide="coins" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <span>超具体副业指南</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="startQuiz()" class="w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-titanium-950 font-bold py-3.5 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 group shadow-lg shadow-cyan-500/10">
+                            <span>开始磁场测定</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-2 text-xs text-titanium-400 flex items-start space-x-2">
+                <i data-lucide="info" class="w-4 h-4 text-titanium-400 shrink-0 mt-0.5"></i>
+                <span>提示：请根据第一直觉选择最符合你真实状态的选项，结果将为你提供可立刻操作的具象化建议。</span>
+            </div>
+        </div>
+
+        <!-- QUIZ SECTION -->
+        <div id="view-quiz" class="hidden space-y-6">
+            <div class="glass-panel rounded-xl p-4 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center space-x-2 text-titanium-400">
+                    <span>STEP</span>
+                    <span id="quiz-step-num" class="text-titanium-100 font-bold">01</span>
+                    <span>/ 06</span>
+                </div>
+                <div class="w-36 bg-titanium-800 rounded-full h-1.5 overflow-hidden">
+                    <div id="quiz-progress-bar" class="bg-gradient-to-r from-cyan-400 to-emerald-400 h-1.5 rounded-full transition-all duration-300 w-[16.6%]"></div>
+                </div>
+                <span id="quiz-progress-percent" class="text-cyanGlow-400 font-bold">16%</span>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6 md:p-8 space-y-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center space-x-1.5 text-[11px] font-mono text-cyanGlow-400 uppercase tracking-wider">
+                        <i data-lucide="git-commit" class="w-3.5 h-3.5"></i>
+                        <span>SITUATION ASSESSMENT</span>
+                    </div>
+                    <h2 id="question-title" class="text-lg md:text-xl font-bold text-titanium-100 leading-snug">
+                        题目加载中...
+                    </h2>
+                </div>
+
+                <div id="options-container" class="space-y-3">
+                    <!-- Options injected dynamically -->
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center px-1">
+                <button id="btn-prev-question" onclick="prevQuestion()" class="text-xs text-titanium-400 hover:text-titanium-200 font-mono flex items-center space-x-1 disabled:opacity-0 transition-opacity">
+                    <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i>
+                    <span>PREV QUESTION</span>
+                </button>
+                <span class="text-[11px] text-titanium-600 font-mono">COGNITIVE ENGINE</span>
+            </div>
+        </div>
+
+        <!-- LOADING SECTION -->
+        <div id="view-loading" class="hidden my-12 text-center space-y-8">
+            <div class="relative w-28 h-28 mx-auto flex items-center justify-center">
+                <div class="absolute inset-0 rounded-full border border-cyanGlow-500/20 animate-ping"></div>
+                <div class="absolute inset-2 rounded-full border border-dashed border-cyanGlow-500/40 animate-spin"></div>
+                <div class="w-16 h-16 rounded-2xl bg-titanium-900 border border-cyanGlow-500/50 flex items-center justify-center text-cyanGlow-400 shadow-xl">
+                    <i data-lucide="coins" class="w-8 h-8 animate-pulse"></i>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <h3 class="text-lg font-bold text-titanium-100">正在为你匹配超具体生财副业路线...</h3>
+                <p id="loading-status-text" class="text-xs font-mono text-titanium-400">
+                    正在计算适合你的利基赛道与超具体副业方向
+                </p>
+            </div>
+
+            <div class="max-w-xs mx-auto glass-panel rounded-lg p-3 text-left text-xs font-mono text-titanium-400 space-y-1.5 border border-titanium-700/60">
+                <div class="flex justify-between"><span>[1] 认知优势定位:</span><span class="text-cyanGlow-400">已就绪</span></div>
+                <div class="flex justify-between"><span>[2] 避坑黑洞分析:</span><span class="text-cyanGlow-400">已就绪</span></div>
+                <div class="flex justify-between"><span>[3] 具象化副业解法:</span><span class="text-emerald-400">生成中</span></div>
+            </div>
+        </div>
+
+        <!-- RESULT SECTION -->
+        <div id="view-result" class="hidden space-y-6">
+
+            <!-- Primary Report Header Card -->
+            <div class="glass-panel rounded-2xl p-6 md:p-8 space-y-6 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center border-b border-titanium-700/60 pb-4 gap-2">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-mono text-cyanGlow-400">
+                            <span class="w-2 h-2 rounded-full bg-cyanGlow-400"></span>
+                            <span>WEALTH ENERGY PROFILE</span>
+                        </div>
+                        <h2 class="text-xl md:text-2xl font-bold text-titanium-100 mt-1">磁场原形诊断结果</h2>
+                    </div>
+                    <div class="text-xs font-mono text-titanium-400 sm:text-right">
+                        <div id="report-id">ARCH: #ARCH_SYSTEM</div>
+                        <div class="text-emerald-400 text-[11px]">STATUS: COMPLETE</div>
+                    </div>
+                </div>
+
+                <!-- Archetype Overview Banner -->
+                <div class="bg-titanium-900/90 rounded-xl p-5 border border-titanium-700/80 space-y-3">
+                    <div class="flex items-start space-x-4">
+                        <div id="archetype-icon-wrapper" class="w-12 h-12 rounded-xl bg-cyanGlow-500/10 border border-cyanGlow-500/30 flex items-center justify-center text-cyanGlow-400 shrink-0 mt-0.5">
+                            <i id="archetype-icon" data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-[10px] font-mono text-titanium-400 uppercase tracking-widest">YOUR WEALTH ARCHETYPE</span>
+                            <h3 id="archetype-title" class="text-lg md:text-xl font-bold text-titanium-100">
+                                秩序复利型 · 流程稳健
+                            </h3>
+                        </div>
+                    </div>
+                    <p id="archetype-core-summary" class="text-xs md:text-sm text-titanium-200 leading-relaxed pt-2 border-t border-titanium-800/80">
+                        --
+                    </p>
+                </div>
+
+                <!-- Section 1: WEALTH VECTOR METRICS -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                            <i data-lucide="compass" class="w-4 h-4 text-cyanGlow-400"></i>
+                            <span>1. 四维财运认知杠杆</span>
+                        </h4>
+                        <span class="text-[10px] font-mono text-titanium-400 uppercase tracking-wider">WEALTH VECTOR METRICS</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-titanium-900/40 p-4 rounded-xl border border-titanium-800">
+                        <div class="w-full h-52 relative flex items-center justify-center">
+                            <canvas id="radarChart"></canvas>
+                        </div>
+
+                        <div class="space-y-2 font-mono text-xs" id="radar-metrics-detail">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Wealth Core Engine & Traits -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                        <i data-lucide="zap" class="w-4 h-4 text-cyanGlow-400"></i>
+                        <span>2. 你的财运核心引擎与微观特质</span>
+                    </h4>
+                    <div id="result-traits" class="bg-titanium-900/70 rounded-xl p-4 border border-titanium-800 text-xs text-titanium-200 space-y-2.5 leading-relaxed">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Section 3: Wealth Traps -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                        <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i>
+                        <span>3. 你的潜在卡财黑洞 (为什么之前赚钱累/没赚到钱)</span>
+                    </h4>
+                    <div id="result-traps" class="bg-titanium-900/70 rounded-xl p-4 border border-amber-500/20 text-xs text-titanium-200 space-y-2.5 leading-relaxed">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Section 4: Side Hustle Directions -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                        <i data-lucide="briefcase" class="w-4 h-4 text-cyanGlow-400"></i>
+                        <span>4. 适合你的轻量副业方向 (Side Hustle)</span>
+                    </h4>
+                    <div id="side-hustles-container" class="grid grid-cols-1 gap-3 text-xs">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Section 5: Weekly Action Guide -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                        <i data-lucide="flag" class="w-4 h-4 text-emerald-400"></i>
+                        <span>5. 本周即可执行的“三步提频指南”</span>
+                    </h4>
+                    <div id="result-guide" class="bg-titanium-900/70 rounded-xl p-4 border border-titanium-800 text-xs text-titanium-200 space-y-3">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Section 6: Best Partner & Caution -->
+                <div class="space-y-3 border-t border-titanium-700/60 pt-5">
+                    <h4 class="text-xs md:text-sm font-bold text-titanium-100 flex items-center space-x-2">
+                        <i data-lucide="users" class="w-4 h-4 text-cyanGlow-400"></i>
+                        <span>6. 你的最佳发财搭子 & 避坑指南</span>
+                    </h4>
+                    <div id="result-partners" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Quote Card -->
+                <div class="pt-6 border-t border-titanium-800 text-center space-y-1">
+                    <p id="archetype-quote" class="text-xs md:text-sm font-serif italic text-emerald-300 leading-relaxed">
+                        “秩序是财富最稳固的容器。当你把杂乱整理成系统，收益就会以复利的方式自然奔赴而来。”
+                    </p>
+                    <span class="text-[10px] text-titanium-500 uppercase tracking-widest block">— 财运磁场锚点 —</span>
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="grid grid-cols-2 gap-3">
+                <button onclick="restartQuiz()" class="w-full bg-titanium-800 hover:bg-titanium-700 border border-titanium-700 text-titanium-200 font-medium py-3 px-4 rounded-xl text-xs transition-colors flex items-center justify-center space-x-2 font-mono">
+                    <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+                    <span>↺ 重新测定</span>
+                </button>
+                <button onclick="copySummaryText()" class="w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-titanium-950 font-bold py-3 px-4 rounded-xl text-xs transition-colors flex items-center justify-center space-x-2 shadow-md font-mono">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    <span>复制我的诊断结果</span>
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-titanium-800 border border-cyanGlow-500/40 text-titanium-100 px-4 py-2 rounded-lg shadow-2xl text-xs font-mono opacity-0 pointer-events-none transition-opacity duration-300 z-50 flex items-center space-x-2">
+        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+        <span id="toast-msg">已复制</span>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                id: 1,
+                title: "1. 当看到或听说一个新的赚钱小门路或商业趋势时，你的第一反应通常是：",
+                options: [
+                    { 
+                        text: "A. 先安静下来查查资料，把这件事靠什么赚钱、底层逻辑搞清楚", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 先做个简单的小计划或成本清单，想想如果自己去做该按什么步骤理顺", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 不管三七二十一，先花几十块或几分钟用最轻的方式试一下，边做边改", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 第一时间找朋友或圈子里懂行的伙伴聊一聊，看大家有没有兴趣一起做", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: "2. 在日常赚钱、学习或做事的过程中，哪种情况最消耗你自己？",
+                options: [
+                    { 
+                        text: "A. 被琐事打断，静不下心好好研究", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 安排混乱，缺乏明确可复用的常规流程", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 流程繁琐，大家光讨论不行动，错失了最佳的市场尝试时机", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 环境缺乏真诚信任，大家互相算计防备，沟通合作成本极高", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: "3. 回想一下，你觉得自己最容易赚到第一笔小钱或发现好机会的时刻是：",
+                options: [
+                    { 
+                        text: "A. 静静钻研，搞懂了别人没注意到的专业知识或门槛", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 把一套原本复杂繁琐的事，梳理成有条不紊的标准流程或服务", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 当原本计划被打破，快速调整试错，误打误撞碰出了新商机", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 帮朋友或客户解决了一个真实难题，靠口碑赢得深度信任，甚至获得新的介绍项目", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: "4. 面对不太确定的副业或生财项目，什么最能给你安全感？",
+                options: [
+                    { 
+                        text: "A. 对自己能力的自信：我确信有把握做好这件事", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 做足成本防御：控制好投入的资金与精力，确保风险可控", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 不行就换的轻盈心态，快速试跑就不怕了", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 身边有值得信任、能随时互相支招和带我一起玩的靠谱伙伴", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            },
+            {
+                id: 5,
+                title: "5. 如果要把你的精力放在最能创造价值的状态，你最喜欢哪种感觉？",
+                options: [
+                    { 
+                        text: "A. 独自沉浸在专业领域做精做深，产出高质量的独家成果", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 看着自己的流程有条不紊推进，有稳定、持续且可预期的复利回报", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 置身于新鲜有趣的新风口中，随时抓住新机会并快速赚到第一桶金", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 得到客户或合作伙伴的真心认可，靠有温度的口碑与信任获得收益", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            },
+            {
+                id: 6,
+                title: "6. 你觉得在价值交换和生财方面，自己最惹人喜欢、最难被取代的闪光点是：",
+                options: [
+                    { 
+                        text: "A. 专业度高、看问题透彻，总是能帮大家找到高含金量的解决方案", 
+                        scores: { insight: 4, compound: 1, antifragile: 1, resonance: 1 },
+                        type: "ARCH_INSIGHT"
+                    },
+                    { 
+                        text: "B. 靠谱稳定、注重履约，交给我的事情绝对不会搞砸，让人极度放心", 
+                        scores: { insight: 1, compound: 4, antifragile: 1, resonance: 1 },
+                        type: "ARCH_SYSTEM"
+                    },
+                    { 
+                        text: "C. 反应敏捷、敢试敢做，能抢在别人前面把新事物快速跑通", 
+                        scores: { insight: 1, compound: 1, antifragile: 4, resonance: 1 },
+                        type: "ARCH_ANTIFRAGILE"
+                    },
+                    { 
+                        text: "D. 亲和力强、同理心足，能给客户极高的信任感与情绪价值", 
+                        scores: { insight: 1, compound: 1, antifragile: 1, resonance: 4 },
+                        type: "ARCH_NETWORK"
+                    }
+                ]
+            }
+        ];
+
+        const archetypes = {
+            ARCH_SYSTEM: {
+                title: "秩序复利型 · 流程稳健",
+                code: "ARCH_SYSTEM",
+                icon: "cpu",
+                summary: "你的生财核心来自于将繁琐事务标准化、流程化与稳健积累。你非常擅长梳理混乱、建立秩序。别人觉得繁琐杂乱的事情，到了你手里都能被理得顺顺当当。你适合靠“可重复、有规律”的系统稳稳赚钱。",
+                traits: [
+                    "✦ 逻辑条理极佳：善于把复杂过程拆解成 1-2-3 步骤，极度靠谱。",
+                    "✦ 风险防御力强：不贪图一夜暴富，注重安全边际与可持续性。",
+                    "✦ 复利效应大：搭建完一套流程后，后续只需要极少精力维护即可产生收益。"
+                ],
+                traps: [
+                    "• 畏惧不确定性：遇到规则不明确或变化极快的机会时容易犹豫，错失早期快闪红利。",
+                    "• 沉迷细微劳动：花了太多精力在不需要创造力的琐碎整理上，忘记了提升整体效果。"
+                ],
+                hustles: [
+                    {
+                        title: "💡 数字资产与效率模板制作",
+                        tag: "系统复利",
+                        desc: "整理高效 Notion/Excel 模板、闲置二手流转托管、后台数据维护。",
+                    
+                    },
+                    {
+                        title: "💡 小微运营标准化服务",
+                        tag: "稳定运营",
+                        desc: "帮自媒体或小商家提供日常排版、定时发布与基础客服支持。",
+                       
+                    }
+                ],
+                guide: {
+                    step1: "1. 止损：停止在同一个不需要脑力的机械小事上反复消耗超过 2 小时。",
+                    step2: "2. 启动：每天工作前清空手机和电脑的乱七八糟文件，保持环境舒心。",
+                    step3: "3. 行动：把你日常用得最顺手的一个表格或流程整理出来，挂上出售。"
+                },
+                partners: {
+                    best: "<span class='font-bold text-cyanGlow-400'>深度沉浸型：</span>他能提供核心技能或产品，你负责搭建运营流程变现。",
+                    avoid: "<span class='font-bold text-rose-300'>毫无秩序随意变动型：</span>今天一个想法明天一个想法，随时推翻既定流程的人。"
+                },
+                quote: "“秩序是财富最稳固的容器。当你把杂乱整理成系统，收益就会以复利的方式自然奔赴而来。”"
+            },
+            ARCH_INSIGHT: {
+                title: "深度沉浸型 · 专精破局",
+                code: "ARCH_INSIGHT",
+                icon: "brain-circuit",
+                summary: "你的生财核心来自于将复杂难题琢磨透彻、做深专业与利基变现。你有极强的专注力与洞察力，往往能发现别人忽略的利基机会。把你擅长的知识或技术做深做精，就是你最大的生财护城河。",
+                traits: [
+                    "✦ 深度钻研力强：能够沉下心理清底层逻辑，靠独具见解的专业度赢得高溢价。",
+                    "✦ 产出作品深度：不随波逐流，靠高质量产出建立个人声誉。",
+                    "✦ 价值交付率高：一旦出手必属精品，极具专业说服力和不可替代性。"
+                ],
+                traps: [
+                    "• 过度追求完美（卡财第一大坑）：总觉得“还不够专业/没准备好”，迟迟不敢将成果展示出来。",
+                    "• 轻视渠道宣发：容易陷入“酒香不怕巷子深”的执念，忽略了包装与流量推广的重要性。"
+                ],
+                hustles: [
+                    {
+                        title: "💡 知识资产与避坑指南整理",
+                        tag: "知识专精",
+                        desc: "把踩过的坑或研究透的小领域整理成高价值 PDF/电子笔记在闲鱼或小红书出售。",
+        
+                    },
+                    {
+                        title: "💡 兴趣驱动类专业",
+                        tag: "资产复利",
+                        desc: "尝试写文、画画等自身感兴趣，又可以沉浸式去做的事情。",
+                    
+                    }
+                ],
+                guide: {
+                    step1: "1. 停止止损：停止无止境的“理论积累”，禁止在未试水前购买新的课程或书籍。",
+                    step2: "2. 启动仪式：每天开启工作前写下1个交付目标，不被碎片信息分散精力。",
+                    step3: "3. 轻量行动：把手头完成度较高的成果拿出来展示，测试真实的商业反馈。"
+                },
+                partners: {
+                    best: "<span class='font-bold text-cyanGlow-400'>敏捷破浪型：</span>他行动力超强、懂推广拉客，能把你扎实的作品快速推向市场。",
+                    avoid: "<span class='font-bold text-rose-300'>空想拖延型：</span>只会跟你无限期探讨理论，却没有任何实际落地和变现动作的人。"
+                },
+                quote: "“最好的财运，藏在你静下心来仔细琢磨透的那些专业细节与深度认知里。”"
+            },
+            ARCH_ANTIFRAGILE: {
+                title: "敏捷破浪型 · 风口抢滩",
+                code: "ARCH_ANTIFRAGILE",
+                icon: "zap",
+                summary: "你的生财核心来自于对新趋势的敏锐嗅觉与低成本极速试错。你不需要一开始就做庞大的计划，凭直觉快速下水、快速切入，就能抢先吃到第一波热度红利。极轻的行动力是你的核心武器。",
+                traits: [
+                    "✦ 趋势嗅觉敏锐：对热门话题与风口极度敏感，能抢在人群之前切入赛道。",
+                    "✦ 试错成本极低：心态轻盈，不纠结失败，不行就换，靠高频迭代换取正反馈。",
+                    "✦ 爆发力极强：善于借力打力，能够在短时间内爆发出惊人的流量与收益。"
+                ],
+                traps: [
+                    "• 三分钟热度：开坑多而沉淀少，新鲜感过去后懒得维护，导致收益断断续续。",
+                    "• 盲目投入精力：在没有经过微观低成本测试的情况下，一口气投入过多时间或资金。"
+                ],
+                hustles: [
+                    {
+                        title: "💡 AI爆款新工具/内容快闪变现",
+                        tag: "热点快闪",
+                        desc: "第一时间体验最新 AI 工具，制作爆款图文/视频带货或售卖实操 Prompt 词库。",
+                    
+                    },
+                    {
+                        title: "💡 流行风口线下快闪与代理",
+                        tag: "灵活抢滩",
+                        desc: "抓准当下热门梗或新兴潮流，利用空闲时间参与市集摆摊。",
+                        
+                    }
+                ],
+                guide: {
+                    step1: "1. 停止止损：单个想法验证超过 3 天未见反馈立马果断止损切下一个。",
+                    step2: "2. 启动仪式：每天刷网前明确只寻找1个可立即套利的小机会，不沉迷无效刷屏。",
+                    step3: "3. 轻量行动：用自己可以承受范围内的精力和时间，快速试跑一个热点小项目。"
+                },
+                partners: {
+                    best: "<span class='font-bold text-cyanGlow-400'>秩序复利型：</span>你能快速把火种试出来，他能帮你把路径沉淀为长期被动资产。",
+                    avoid: "<span class='font-bold text-rose-300'>泼冷水保守型：</span>每次你有新想法，就不断质疑劝你“要三思而后行”的人。"
+                },
+                quote: "“天下武功唯快不破。你的敏捷就是你的黄金武器，用快速试错把时代的风向变成你的帆。”"
+            },
+            ARCH_NETWORK: {
+                title: "温柔共振型 · 信任生态",
+                code: "ARCH_NETWORK",
+                icon: "share-2",
+                summary: "你的生财核心来自于真诚的共情力、情绪价值与深度人际信任。你的财运往往不需要硬核推销，只要你真诚听别人倾诉、提供陪伴或贴心帮忙，别人自然会因为喜欢你这个人、信任你的品味而买单。",
+                traits: [
+                    "✦ 情绪价值极高：天然具亲和力与同理心，能快速建立真诚、温暖的深度信任。",
+                    "✦ 复购转介绍强：客户满意度极高，自发为你转介绍新顾客与长期衍生合作。",
+                    "✦ 口碑护城河稳：靠靠谱的品味与真心待人，积累长期有温度的高黏性私域。"
+                ],
+                traps: [
+                    "• 不好意思谈钱（卡财第一大坑）：过分顾及面子或熟人关系，容易被免费“白嫖”情绪与时间。",
+                    "• 商业边界模糊：把别人的难题全揽在自己身上，搞得自己心力交瘁却没有赚到相应回报。"
+                ],
+                hustles: [
+                    {
+                        title: "💡 情绪树洞与倾听陪伴",
+                        tag: "高溢价",
+                        desc: "线上开启一对一有温度的解忧树洞，提供不批判的倾听与情绪支持，按时计费。",
+                        
+                    },
+                    {
+                        title: "💡真实口碑种草与私人买手",
+                        tag: "真实需求",
+                        desc: "分享你亲身用过且极力推荐的好物、好书或优质服务，通过真诚的信任背书获得带货及佣金收益。",
+                        
+                    }
+                ],
+                guide: {
+                    step1: "1. 停止止损：拒绝任何无偿、无节制索取你情绪价值与时间的“假咨询”。",
+                    step2: "2. 启动仪式：每天开启服务前默念“我的时间和陪伴是有明确商业价值的”。",
+                    step3: "3. 轻量行动：主动联系曾经信任你的老朋友/老客户，告知你最新提供的专属服务。"
+                },
+                partners: {
+                    best: "<span class='font-bold text-cyanGlow-400'>秩序复利型：</span>他能为你温暖的服务制定出标准合理的阶梯报价，防止你被占便宜。",
+                    avoid: "<span class='font-bold text-rose-300'>能量榨取型：</span>单方面向你索取情绪价值和帮忙，一谈到付费就装傻的人。"
+                },
+                quote: "“温度是商业中最稀缺的奢侈品。你真诚给予的每一份理解，终将化作深深信任你的财富纽带。”"
+            }
+        };
+
+        let currentQuestionIndex = 0;
+        let cumulativeScores = { insight: 0, compound: 0, antifragile: 0, resonance: 0 };
+        let typeCounts = { ARCH_INSIGHT: 0, ARCH_SYSTEM: 0, ARCH_ANTIFRAGILE: 0, ARCH_NETWORK: 0 };
+        let radarChartInstance = null;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+
+        function startQuiz() {
+            document.getElementById('view-intro').classList.add('hidden');
+            document.getElementById('view-quiz').classList.remove('hidden');
+            currentQuestionIndex = 0;
+            cumulativeScores = { insight: 0, compound: 0, antifragile: 0, resonance: 0 };
+            typeCounts = { ARCH_INSIGHT: 0, ARCH_SYSTEM: 0, ARCH_ANTIFRAGILE: 0, ARCH_NETWORK: 0 };
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = questions[currentQuestionIndex];
+            
+            document.getElementById('quiz-step-num').innerText = currentQuestionIndex + 1 < 10 ? `0${currentQuestionIndex + 1}` : `${currentQuestionIndex + 1}`;
+            const progress = Math.round(((currentQuestionIndex + 1) / questions.length) * 100);
+            document.getElementById('quiz-progress-percent').innerText = `${progress}%`;
+            document.getElementById('quiz-progress-bar').style.width = `${progress}%`;
+
+            document.getElementById('question-title').innerText = q.title;
+
+            const btnPrev = document.getElementById('btn-prev-question');
+            if (currentQuestionIndex === 0) {
+                btnPrev.classList.add('opacity-0');
+                btnPrev.disabled = true;
+            } else {
+                btnPrev.classList.remove('opacity-0');
+                btnPrev.disabled = false;
+            }
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            q.options.forEach((opt) => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left p-4 rounded-xl glass-card transition-all duration-200 flex items-start justify-between group space-x-3';
+                btn.onclick = () => selectOption(opt);
+
+                btn.innerHTML = `
+                    <span class="text-xs md:text-sm text-titanium-200 group-hover:text-cyanGlow-400 leading-relaxed">${opt.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-titanium-600 group-hover:text-cyanGlow-400 group-hover:translate-x-1 transition-all shrink-0 mt-0.5"></i>
+                `;
+                container.appendChild(btn);
+            });
+
+            lucide.createIcons();
+        }
+
+        function selectOption(opt) {
+            cumulativeScores.insight += opt.scores.insight;
+            cumulativeScores.compound += opt.scores.compound;
+            cumulativeScores.antifragile += opt.scores.antifragile;
+            cumulativeScores.resonance += opt.scores.resonance;
+
+            typeCounts[opt.type] = (typeCounts[opt.type] || 0) + 1;
+
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                renderQuestion();
+            } else {
+                showAnalyzing();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                renderQuestion();
+            }
+        }
+
+        function showAnalyzing() {
+            document.getElementById('view-quiz').classList.add('hidden');
+            document.getElementById('view-loading').classList.remove('hidden');
+
+            const statusTexts = [
+                "梳理你的思维偏好与灵感模式...",
+                "匹配最适合你的具象化副业...",
+                "生成四维财运雷达报告..."
+            ];
+
+            let textIdx = 0;
+            const interval = setInterval(() => {
+                textIdx++;
+                if (textIdx < statusTexts.length) {
+                    document.getElementById('loading-status-text').innerText = statusTexts[textIdx];
+                }
+            }, 500);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                calculateAndShowResult();
+            }, 1400);
+        }
+
+        function calculateAndShowResult() {
+            document.getElementById('view-loading').classList.add('hidden');
+            document.getElementById('view-result').classList.remove('hidden');
+
+            let dominantType = 'ARCH_SYSTEM';
+            let maxCount = -1;
+            Object.keys(typeCounts).forEach(k => {
+                if (typeCounts[k] > maxCount) {
+                    maxCount = typeCounts[k];
+                    dominantType = k;
+                }
+            });
+
+            const profile = archetypes[dominantType] || archetypes.ARCH_SYSTEM;
+
+            document.getElementById('report-id').innerText = `ARCH: #${profile.code}`;
+            document.getElementById('archetype-title').innerText = profile.title;
+            document.getElementById('archetype-core-summary').innerText = profile.summary;
+            document.getElementById('archetype-quote').innerText = `“${profile.quote}”`;
+
+            const iconElem = document.getElementById('archetype-icon');
+            iconElem.setAttribute('data-lucide', profile.icon);
+
+            // Traits
+            const traitsContainer = document.getElementById('result-traits');
+            traitsContainer.innerHTML = profile.traits.map(t => `<p>${t}</p>`).join('');
+
+            // Traps
+            const trapsContainer = document.getElementById('result-traps');
+            trapsContainer.innerHTML = profile.traps.map(tr => `<p>${tr}</p>`).join('');
+
+            // Hustles
+            const hustlesContainer = document.getElementById('side-hustles-container');
+            hustlesContainer.innerHTML = '';
+            if (profile.hustles) {
+                profile.hustles.forEach(sh => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-titanium-900/90 p-3.5 rounded-xl border border-titanium-800 space-y-2';
+                    card.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-xs md:text-sm text-cyanGlow-400">${sh.title}</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyanGlow-500/10 text-cyanGlow-400 border border-cyanGlow-500/20">${sh.tag}</span>
+                        </div>
+                        <p class="text-titanium-300 text-xs leading-relaxed">${sh.desc}</p>
+                    `;
+                    hustlesContainer.appendChild(card);
+                });
+            }
+
+            // Weekly Guide
+            const guideContainer = document.getElementById('result-guide');
+            guideContainer.innerHTML = `
+                <p><span class="text-emerald-400 font-semibold">1. 停止止损：</span>${profile.guide.step1.replace(/1\. 停止止损：/, '')}</p>
+                <p><span class="text-cyanGlow-400 font-semibold">2. 启动仪式：</span>${profile.guide.step2.replace(/2\. 启动仪式：/, '')}</p>
+                <p><span class="text-emerald-300 font-semibold">3. 轻量行动：</span>${profile.guide.step3.replace(/3\. 轻量行动：/, '')}</p>
+            `;
+
+            // Partners
+            const partnersContainer = document.getElementById('result-partners');
+            partnersContainer.innerHTML = `
+                <div class="p-3 rounded-xl bg-titanium-900/90 border border-emerald-500/20 space-y-1">
+                    <div class="text-emerald-400 font-medium text-[11px]">✅ 最佳发财搭子</div>
+                    <div class="text-titanium-300 text-xs leading-relaxed">${profile.partners.best}</div>
+                </div>
+                <div class="p-3 rounded-xl bg-titanium-900/90 border border-rose-500/20 space-y-1">
+                    <div class="text-rose-400 font-medium text-[11px]">❌ 警惕踩坑人格</div>
+                    <div class="text-titanium-300 text-xs leading-relaxed">${profile.partners.avoid}</div>
+                </div>
+            `;
+
+            lucide.createIcons();
+            initRadarChart();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function initRadarChart() {
+            const ctx = document.getElementById('radarChart').getContext('2d');
+            
+            if (radarChartInstance) {
+                radarChartInstance.destroy();
+            }
+
+            const rawInsight = cumulativeScores.insight || 6;
+            const rawCompound = cumulativeScores.compound || 21;
+            const rawAntifragile = cumulativeScores.antifragile || 9;
+            const rawResonance = cumulativeScores.resonance || 6;
+
+            function mapRadius(val) {
+                return Math.round(35 + ((val - 6) / (24 - 6)) * 60);
+            }
+
+            const mappedData = [
+                mapRadius(rawInsight),
+                mapRadius(rawCompound),
+                mapRadius(rawAntifragile),
+                mapRadius(rawResonance)
+            ];
+
+            const formatScore = (val) => val < 10 ? `0${val}` : `${val}`;
+
+            document.getElementById('radar-metrics-detail').innerHTML = `
+                <div class="bg-titanium-900/60 p-2 rounded-lg border border-titanium-800 flex justify-between items-center">
+                    <span class="text-titanium-300">深度沉浸 (Insight):</span>
+                    <span class="font-bold text-cyanGlow-400 font-mono">${formatScore(rawInsight)}</span>
+                </div>
+                <div class="bg-titanium-900/60 p-2 rounded-lg border border-titanium-800 flex justify-between items-center">
+                    <span class="text-titanium-300">秩序复利 (Compound):</span>
+                    <span class="font-bold text-cyanGlow-400 font-mono">${formatScore(rawCompound)}</span>
+                </div>
+                <div class="bg-titanium-900/60 p-2 rounded-lg border border-titanium-800 flex justify-between items-center">
+                    <span class="text-titanium-300">敏捷破浪 (Agility):</span>
+                    <span class="font-bold text-cyanGlow-400 font-mono">${formatScore(rawAntifragile)}</span>
+                </div>
+                <div class="bg-titanium-900/60 p-2 rounded-lg border border-titanium-800 flex justify-between items-center">
+                    <span class="text-titanium-300">温柔共振 (Resonance):</span>
+                    <span class="font-bold text-cyanGlow-400 font-mono">${formatScore(rawResonance)}</span>
+                </div>
+            `;
+
+            radarChartInstance = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['深度沉浸', '秩序复利', '敏捷破浪', '温柔共振'],
+                    datasets: [{
+                        label: '生财向量',
+                        data: mappedData,
+                        backgroundColor: 'rgba(56, 189, 248, 0.22)',
+                        borderColor: '#38bdf8',
+                        borderWidth: 2.5,
+                        pointBackgroundColor: '#10b981',
+                        pointBorderColor: '#07090e',
+                        pointBorderWidth: 2,
+                        pointHoverBackgroundColor: '#fff',
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            min: 0,
+                            max: 100,
+                            angleLines: { color: 'rgba(255, 255, 255, 0.15)' },
+                            grid: { color: 'rgba(255, 255, 255, 0.12)' },
+                            pointLabels: {
+                                color: '#e0f2fe',
+                                font: { family: 'Inter', size: 10, weight: '600' }
+                            },
+                            ticks: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const rawScores = [rawInsight, rawCompound, rawAntifragile, rawResonance];
+                                    return ` 原始得分: ${formatScore(rawScores[context.dataIndex])}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function restartQuiz() {
+            document.getElementById('view-result').classList.add('hidden');
+            document.getElementById('view-intro').classList.remove('hidden');
+        }
+
+        function copySummaryText() {
+            const title = document.getElementById('archetype-title').innerText;
+            const quote = document.getElementById('archetype-quote').innerText;
+            
+            const shareText = `【潜在财运与生财磁场测定】\n我的磁场原形：${title}\n财运锚点：${quote}\n-----\n找准具体副业方向与落地第1步，开启你的专属财运磁场！`;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = shareText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast('已复制报告至剪贴板');
+            } catch (err) {
+                showToast('复制失败，请截图保存');
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').innerText = msg;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
